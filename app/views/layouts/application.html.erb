@@ -10,8 +10,6 @@
 </head>
 <body ng-app="myAngularApp">
   <ui-view></ui-view>
-
-    Hello!
   <script type="text/ng-template" id="/main.html">
     <ul ng-repeat="post in posts">
       <li>
@@ -23,6 +21,10 @@
       <input type="text" ng-model="title"></input>
       <button type="submit">Post</button>
     </form>
+  </script>
+  <script type="text/ng-template" id="/home.html">
+    <h1>My Angular App</h1>
+    <p>Hello!</p>
   </script>
 </body>
 </html>
