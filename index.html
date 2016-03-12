@@ -4,10 +4,17 @@
     <title>My Angular App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script type="text/javascript">
-      angular.module('myAngularApp', []).controller('MainCtrl', []);
+      angular
+      .module('myAngularApp', [])
+      .controller('MainCtrl', [
+        '$scope',
+        function($scope){
+          $scope.hi = 'Hello 2016!'
+        }
+      ]);
     </script>
   </head>
   <body ng-app="myAngularApp" ng-controller="MainCtrl">
-    
+    {{ hi }}
   </body>
 </html>
