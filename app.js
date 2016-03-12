@@ -4,7 +4,8 @@ angular
   '$scope',
   function($scope){
 
-
+    $scope.addPost = function(){};
+    $scope.voteUp = function(){};
 
     $scope.posts = [
       {

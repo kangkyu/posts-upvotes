@@ -7,7 +7,14 @@
   </head>
   <body ng-app="myAngularApp" ng-controller="MainCtrl">
     <ul ng-repeat="post in posts | orderBy: '-votes'">
-      <li><strong>{{ post.title }}</strong> {{ post.votes }} votes</li>
+      <li>
+        <span ng-click="voteUp(post)">(click to vote)</span>
+        <strong>{{ post.title }}</strong> {{ post.votes }} votes
+      </li>
     </ul>
+    <form ng-submit="addPost()">
+      <input type="text"></input>
+      <button type="submit">Post</button>
+    </form>
   </body>
 </html>
