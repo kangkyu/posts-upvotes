@@ -4,7 +4,10 @@ angular
   '$scope',
   function($scope){
 
-    $scope.addPost = function(){};
+    $scope.addPost = function(){
+      $scope.posts.push({title: $scope.title, votes: 0});
+      $scope.title = '';
+    };
     $scope.voteUp = function(){};
 
     $scope.posts = [
