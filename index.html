@@ -1,9 +1,13 @@
 <!doctype html>
-<html ng-app>
+<html>
   <head>
     <title>My Angular App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript">
+      angular.module('myAngularApp', []).controller('MainCtrl', []);
+    </script>
   </head>
-  <body>
+  <body ng-app="myAngularApp" ng-controller="MainCtrl">
+    
   </body>
 </html>
