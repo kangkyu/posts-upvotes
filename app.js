@@ -5,6 +5,7 @@ angular
   function($stateProvider){
     $stateProvider.state('main', {
       url: '/main',
+      controller: 'MainCtrl',
       templateUrl: '/main.html'
     });
   }
