@@ -1,5 +1,14 @@
 angular
-.module('myAngularApp', [])
+.module('myAngularApp', ['ui.router'])
+.config([
+  '$stateProvider',
+  function($stateProvider){
+    $stateProvider.state('main', {
+      url: '/main',
+      templateUrl: '/main.html'
+    });
+  }
+])
 .controller('MainCtrl', [
   '$scope',
   function($scope){

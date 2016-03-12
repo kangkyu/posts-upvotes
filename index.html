@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>My Angular App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
   </head>
-  <body ng-app="myAngularApp" ng-controller="MainCtrl">
+  <body ng-app="myAngularApp">
+    <ui-view></ui-view>
+  </body>
+</html>
+
+<script type="text/ng-template" id="/main.html">
+  <div ng-controller="MainCtrl">
     <ul ng-repeat="post in posts | orderBy: '-votes'">
       <li>
         <span ng-click="voteUp(post)">(click to vote)</span>
@@ -17,5 +24,5 @@
       <input type="text" ng-model="title"></input>
       <button type="submit">Post</button>
     </form>
-  </body>
-</html>
+  </div>
+</script>
