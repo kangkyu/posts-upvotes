@@ -16,6 +16,11 @@ angular
         object.posts.push(data);
       })
     };
+    object.upvoteIt = function(post){
+      return $http.put('/posts/'+ post.id  +'/upvote', {post: post}).success(function(data){
+        post.votes += 1;
+      })
+    }
     return object;
   }
 ]);

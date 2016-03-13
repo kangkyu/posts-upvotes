@@ -7,4 +7,10 @@ class PostsController < ApplicationController
     @post = Post.create(params.require(:post).permit(:title, :votes))
     render 'show'
   end
+
+  def upvote
+    @post = Post.find(params[:id])
+    @post.increment!(:votes)
+    render 'show'
+  end
 end

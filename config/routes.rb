@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'application#angular'
 
-  resources :posts, only: [:index, :create], format: 'json'
+  resources :posts, only: [:index, :create], format: 'json' do
+    put :upvote, on: :member
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

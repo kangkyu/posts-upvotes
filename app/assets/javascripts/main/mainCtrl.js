@@ -10,7 +10,7 @@ angular
       $scope.title = '';
     };
     $scope.voteUp = function(post){
-      post.votes += 1;
+      postsFlow.upvoteIt(post);
     };
 
     $scope.posts = postsFlow.posts;
