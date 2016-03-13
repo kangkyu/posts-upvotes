@@ -8,7 +8,12 @@ angular
     .state('main', {
       url: '/main',
       controller: 'MainCtrl',
-      templateUrl: 'main/_main.html'
+      templateUrl: 'main/_main.html',
+      resolve: {
+        postPromise: ['postsFlow', function(postsFlow){
+          return postsFlow.loadAll();
+        }]
+      }
     })
     .state('home', {
       url: '/',
