@@ -11,6 +11,9 @@ angular
         angular.copy(data, object.posts);
       })
     };
+    object.addOne = function(post){
+      object.posts.push(post);
+    };
     return object;
   }
 ]);

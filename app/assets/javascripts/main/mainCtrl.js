@@ -6,7 +6,7 @@ angular
   function($scope, postsFlow){
 
     $scope.addPost = function(){
-      $scope.posts.push({title: $scope.title, votes: 0});
+      postsFlow.addOne({title: $scope.title, votes: 0});
       $scope.title = '';
     };
     $scope.voteUp = function(post){
