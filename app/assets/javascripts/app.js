@@ -1,5 +1,5 @@
 angular
-.module('myAngularApp', ['ui.router'])
+.module('myAngularApp', ['ui.router', 'templates'])
 .config([
   '$stateProvider',
   '$urlRouterProvider',
@@ -8,11 +8,11 @@ angular
     .state('main', {
       url: '/main',
       controller: 'MainCtrl',
-      templateUrl: '/main.html'
+      templateUrl: 'main/_main.html'
     })
     .state('home', {
       url: '/',
-      templateUrl: '/home.html'
+      templateUrl: 'home/_home.html'
     });
     $urlRouterProvider.otherwise('/');
   }
