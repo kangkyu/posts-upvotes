@@ -1,6 +1,12 @@
-Create new posts
-View all posts ordered by upvotes
-Add comments about a given post
-View comments for a given post
-Upvote posts and comments
-Create a user authentication system using Devise
++ Create new posts
++ View all posts with votes
++ Vote posts
++ use Angular, on Rails
+
+## Coming up Next:
+
+make request from front-end, to get '/posts'
+
+## Story so far
+
+"Look up the previous commits"
