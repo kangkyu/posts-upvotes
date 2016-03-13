@@ -12,7 +12,9 @@ angular
       })
     };
     object.addOne = function(post){
-      object.posts.push(post);
+      return $http.post('/posts', {post: post}).success(function(data){
+        object.posts.push(data);
+      })
     };
     return object;
   }

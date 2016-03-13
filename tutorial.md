@@ -5,7 +5,8 @@
 
 ## Coming up Next:
 
-make request from front-end, to get '/posts'
++ make request from front-end, `POST '/posts'`
++ fix "Can't verify CSRF token authenticity" error
 
 ## Story so far
 
