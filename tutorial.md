@@ -5,8 +5,11 @@
 
 ## Coming up Next:
 
-+ test "upvote a post"
++ "you will post after you log in" - Add authentication
++ write up README on and about the JSON endpoints
++ CDN is truth, how about sprockets? how about bower install?
++ ES6, ES6 import & export
 
 ## Story so far
 
-"Look up the previous commits"
+"Look up the previous commits" [commits](https://github.com/kangkyu/posts-upvotes/commits/master)
