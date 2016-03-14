@@ -1,4 +1,4 @@
-<ul ng-repeat="post in posts">
+<ul ng-repeat="post in posts | orderBy: 'id'">
   <li>
     <span ng-click="voteUp(post)">(click to vote)</span>
     <strong>{{ post.title }}</strong> {{ post.votes }} votes

@@ -5,8 +5,7 @@
 
 ## Coming up Next:
 
-+ make request from front-end, `POST '/posts'`
-+ fix "Can't verify CSRF token authenticity" error
++ test "upvote a post"
 
 ## Story so far
 

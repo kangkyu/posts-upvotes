@@ -17,7 +17,7 @@ angular
       })
     };
     object.upvoteIt = function(post){
-      return $http.put('/posts/'+ post.id  +'/upvote', {post: post}).success(function(data){
+      return $http.put('/posts/'+ post.id  +'/upvote').success(function(data){
         post.votes += 1;
       })
     }

@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(params.require(:post).permit(:title, :votes))
-    render 'show'
+    render 'show', status: :created
   end
 
   def upvote
