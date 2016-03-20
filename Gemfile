@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'angular-rails-templates'
-gem 'angular_rails_csrf', path: '../angular_rails_csrf'
+gem 'angular_rails_csrf', github: 'kangkyu/angular_rails_csrf'
 
 gem 'activerecord',  '>= 5.0.0.beta3', '< 5.1' # Rails framework
 gem 'railties',      '>= 5.0.0.beta3', '< 5.1' # Rails framework

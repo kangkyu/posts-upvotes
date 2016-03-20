@@ -1,5 +1,6 @@
-PATH
-  remote: ../angular_rails_csrf
+GIT
+  remote: git://github.com/kangkyu/angular_rails_csrf.git
+  revision: a77d1967df0f12e6be160e6724024447338029f1
   specs:
     angular_rails_csrf (1.0.4)
       railties (>= 3, < 5)
