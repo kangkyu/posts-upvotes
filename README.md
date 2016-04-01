@@ -1,3 +1,5 @@
+There are two branches to use, one is to explore es6, you should run `npm install` for that branch, the other one is to use Angular with bower and sprockets, which you should run `bower install` for.
+
 #### GET '/posts'
 
 ```

@@ -11,3 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+# for bower-sprocket branch
+vendor/assets/bower_components/
+
+# for es6 branch
+node_modules/
