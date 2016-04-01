@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 gem 'angular-rails-templates'
 gem 'angular_rails_csrf', github: 'kangkyu/angular_rails_csrf'
 
-gem 'activerecord',  '>= 5.0.0.beta3', '< 5.1' # Rails framework
-gem 'railties',      '>= 5.0.0.beta3', '< 5.1' # Rails framework
+github 'rails/rails', branch: 'master' do
+  gem 'activerecord'
+  gem 'railties'
+end
 
 # gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
