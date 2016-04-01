@@ -2,7 +2,8 @@ function configRoutes ($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('main', {
       url: '/main',
-      controller: 'MainCtrl',
+      controller: 'MainCtroller',
+      controllerAs: 'mainCtrl',
       templateUrl: 'main/_main.html',
       resolve: {
         postPromise: ['postsFlow', function(postsFlow){

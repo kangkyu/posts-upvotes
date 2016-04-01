@@ -1,18 +1,17 @@
 angular
 .module('myAngularApp')
-.controller('MainCtrl', [
-  '$scope',
+.controller('MainCtroller', [
   'postsFlow',
-  function($scope, postsFlow){
+  function(postsFlow){
 
-    $scope.addPost = function(){
-      postsFlow.addOne({title: $scope.title, votes: 0});
-      $scope.title = '';
+    this.addPost = function(){
+      postsFlow.addOne({title: this.title, votes: 0});
+      this.title = '';
     };
-    $scope.voteUp = function(post){
+    this.voteUp = function(post){
       postsFlow.upvoteIt(post);
     };
 
-    $scope.posts = postsFlow.posts;
+    this.posts = postsFlow.posts;
   }
 ]);

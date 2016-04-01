@@ -1,10 +1,10 @@
-<ul ng-repeat="post in posts | orderBy: 'id'">
+<ul ng-repeat="post in mainCtrl.posts | orderBy: 'id'">
   <li>
-    <span ng-click="voteUp(post)">(click to vote)</span>
+    <span ng-click="mainCtrl.voteUp(post)">(click to vote)</span>
     <strong>{{ post.title }}</strong> {{ post.votes }} votes
   </li>
 </ul>
-<form ng-submit="addPost()">
-  <input type="text" ng-model="title"></input>
+<form ng-submit="mainCtrl.addPost()">
+  <input type="text" ng-model="mainCtrl.title"></input>
   <button type="submit">Post</button>
 </form>
