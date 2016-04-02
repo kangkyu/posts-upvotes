@@ -1,8 +1,10 @@
+import MainController from './main/mainCtrl'
+
 function configRoutes ($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('main', {
       url: '/main',
-      controller: 'MainCtroller',
+      controller: MainController,
       controllerAs: 'mainCtrl',
       templateUrl: 'main/_main.html',
       resolve: {
