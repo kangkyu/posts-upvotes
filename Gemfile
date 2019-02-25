@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'angular-rails-templates'
-gem 'angular_rails_csrf', github: 'kangkyu/angular_rails_csrf'
+gem 'angular_rails_csrf'
 
-github 'rails/rails', branch: 'master' do
+git 'https://github.com/rails/rails.git', branch: '5-0-stable' do
   gem 'activerecord'
   gem 'railties'
 end
