@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'angular-rails-templates'
-gem 'angular_rails_csrf'
+gem 'angular-rails-templates', '~> 1.0.2'
+gem 'angular_rails_csrf', '~> 4.0'
 
 git 'https://github.com/rails/rails.git', branch: '5-0-stable' do
   gem 'activerecord'
