@@ -1,4 +1,8 @@
-There are two branches to use, one is to explore es6, you should run `npm install` for that branch, the other one is to use Angular with bower and sprockets, which you should run `bower install` for.
+<img width="433" alt="Screenshot 2023-04-16 at 10 06 47 PM" src="https://user-images.githubusercontent.com/6598297/232384119-236e855b-8dbe-4f96-bbee-45c763e75204.png">
+
+# posts-upvotes
+
+There are two other branches to use, one is to explore es6, you should run `npm install` for that branch, the other one is to use Angular with bower and sprockets, which you should run `bower install` for.
 
 #### GET '/posts'
 
